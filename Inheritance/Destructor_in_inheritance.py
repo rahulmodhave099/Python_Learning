@@ -1,3 +1,4 @@
+'''
 class Parent:
     p = 30
     def __init__(self):
@@ -22,7 +23,25 @@ print(obj.dispData)
 obj.dispData()
 
 Parent.dispParent()
-
+'''
 
 # Destructor
 
+class Parent:
+    p = 30
+    def __init__(self):
+        print("In Parent Constructor")
+        self.x = 10
+        self.y = 20
+
+    def dispData(self):
+        print(self.x)
+        print(self.y)
+
+    def __del__(self):
+        print("In destructor")
+
+obj = Parent()
+obj.dispData()
+#obj.__del__()
+del obj
