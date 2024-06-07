@@ -45,3 +45,14 @@ obj = Parent()
 obj.dispData()
 #obj.__del__()
 del obj
+print("#############################################")
+# For 2 different objects
+#obj1 = Parent()
+#obj2 = Parent()
+print("#############################################")
+
+# For 2 objects having same name
+
+obj3 = Parent()
+obj3 = Parent()
+print("Code samplay")
