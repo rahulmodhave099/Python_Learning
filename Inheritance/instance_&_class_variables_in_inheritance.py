@@ -50,3 +50,15 @@ class Child(Parent):
 
 obj = Child()
 obj.dispData()
+
+class Demo:
+    print("Start Class")
+
+    def __init__(self):
+        print("In Constructor")
+
+    print("End class")
+
+print("Start Code")
+obj = Demo()
+print("End Code")
