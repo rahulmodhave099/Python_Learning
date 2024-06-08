@@ -55,7 +55,7 @@ print("#############################################")
 obj3 = Parent()
 obj3 = Parent()
 print("Code samplay")
-'''
+
 class Parent1:
     def __init__(self):
         print("In parent Constructor")
@@ -82,3 +82,24 @@ class Child(Parent1):
 obj = Child()
 obj.dispParent()
 obj.dispChild()
+'''
+
+class Parent:
+    x = 10
+    y = 20
+
+    @classmethod
+    def dispData(cls):
+        print(cls.x)
+        print(cls.y)
+
+class Child(Parent):
+
+    x = 30
+    y = 40
+
+    @classmethod
+    def dispData(cls):
+        print(cls.x)
+        print(cls.y)
+        super().dispData()
