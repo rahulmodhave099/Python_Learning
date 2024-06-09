@@ -85,6 +85,8 @@ def fun():
     print("In fun")
     obj = Demo()
     print("End fun")
+    return obj
 
-fun()
+#fun()
+retObj = fun()
 print("End code")
