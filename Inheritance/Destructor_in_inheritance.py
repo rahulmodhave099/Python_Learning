@@ -56,7 +56,7 @@ obj3 = Parent()
 obj3 = Parent()
 print("Code samplay")
 
-'''
+
 
 class Demo:
     def __init__(self):
@@ -71,4 +71,20 @@ obj2 = Demo()
 obj3 = obj1
 del obj1
 
+print("End code")
+'''
+
+class Demo:
+    def __init__(self):
+        print("In Constructor")
+
+    def __del__(self):
+        print("In Destructor")
+
+def fun():
+    print("In fun")
+    obj = Demo()
+    print("End fun")
+
+fun()
 print("End code")
