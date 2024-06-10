@@ -67,3 +67,8 @@ class F(D, E):
     def fun(self):
         print("In fun : F")
         super().fun()
+
+obj = F()
+obj.fun()
+
+print(F.mro())
