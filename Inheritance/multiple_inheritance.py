@@ -1,6 +1,6 @@
 # Multiple inheritance
 # MRO : Method Resolution order
-
+'''
 class Parent1:
 
     def __init__(self):
@@ -18,10 +18,11 @@ class Parent2:
         print("In printData")
 
 class Child(Parent2,Parent1):
-    '''
-    def __init__(self):
-        print("In Constructor : Child")
-    '''
+
+    #def __init__(self):
+    #    print("In Constructor : Child")
+        pass
+
 
 obj = Child()                       # Here left thumb rule(DFS) is applied for which constructor is to be get called
 obj = Child()                       # Here left thumb rule() is applied for which constructor is to be get called
@@ -72,3 +73,24 @@ obj = F()
 obj.fun()
 
 print(F.mro())
+
+'''
+
+class Manager:
+
+    def project(self):
+        print("In Project : Manager")
+
+class TeamLead1(Manager):
+    pass
+
+class TeamLead2(Manager):
+
+    def project(self):
+        print("In Project : TeamLead 2")
+
+class Developer(TeamLead1,TeamLead2):
+    pass
+
+obj = Developer()
+obj.project()
