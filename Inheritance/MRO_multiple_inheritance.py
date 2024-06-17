@@ -43,20 +43,30 @@ class Boss:
     def fun(self):
         print("Mich aahe BOSS")
 
-class Manager(Boss):
+class Manager1(Boss):
 
     def fun(self):
-        print("In Fun : Manager")
+        print(" Manager1 Reports to : Boss")
 
-class TeamLead(Boss,Manager):
-
-    def fun(self):
-        print("In Fun : Boss & Manager")
-
-class Developer(TeamLead):
+class Manager2(Boss):
 
     def fun(self):
-        print("In Fun : Developer")
+        print(" Manager2 Reports to : Boss")
+
+class TeamLead1(Manager1,Manager2):
+
+    def fun(self):
+        print(" TeamLead1 Reports to : Manager1 and Manager2")
+
+class TeamLead2(Manager2 ):
+
+    def fun(self):
+        print(" TeamLead2 Reports to : Manager2")
+
+class Developer(TeamLead1,TeamLead2):
+
+    def fun(self):
+        print(" Developer Reports to : TeamLead1 and TeamLead2")
 
 print(Developer.__mro__)
 
