@@ -6,14 +6,18 @@ class Demo:
 
 class Memo:
 
-    def fun(self):
+    def gun(self):
         print("In Memo : fun")
 
 
 def callFun(obj):
-    obj.fun()
+    if(id(obj) == id(obj1)):
+        obj.fun()
+    else:
+        obj.gun()
+
 
 obj1 = Demo()
 obj2 = Memo()
 
-callFun(obj1)
+callFun(obj2)
