@@ -32,3 +32,11 @@ obj1 = Demo()
 obj2 = Memo()
 
 callFun(obj2)
+
+#  Another example
+
+y = "Rahul"
+z = ["Core2web","Rahul","Modhave"]
+
+print(len(y))
+print(len(z))
