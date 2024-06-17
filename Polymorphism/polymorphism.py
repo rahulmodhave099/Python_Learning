@@ -15,6 +15,17 @@ def callFun(obj):
         obj.fun()
     else:
         obj.gun()
+    #  OR
+    if(obj is Demo):
+        obj.fun()
+    else:
+        obj.gun()
+    #  OR
+    if (id(obj) == id(obj1)):
+        obj.fun()
+    else:
+        obj.gun()
+
 
 
 obj1 = Demo()
