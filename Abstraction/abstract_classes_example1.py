@@ -1,6 +1,6 @@
 # Abstract classes
 
-#from program import ICC
+#from example1 import ICC
 
 class BCCI:#(ICC):
 
