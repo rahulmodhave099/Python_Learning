@@ -49,7 +49,7 @@ class Demo:
         print("In Fun")
 
 fun()
-'''
+
 
 # Attribute error for NoneType
 class Demo:
@@ -83,6 +83,16 @@ players = {18:"Virat",45:"Rohit",7:"MSD"}
 print(players[45])
 print(players[18])
 print(players[1])
+'''
 
+# Value error
 
+def add(x,y):
+
+    return x+y
+
+num1 = int(input("Num1 : "))
+num2 = int(input("Num2 : "))                # give string value for input
+
+print(add(num1,num2))
 
