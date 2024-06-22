@@ -96,3 +96,14 @@ num2 = int(input("Num2 : "))                # give string value for input
 
 print(add(num1,num2))
 
+# ZeroDivisionError
+
+def divide(x,y):
+
+    return x/y
+
+num1 = int(input("Num1 : "))
+num2 = int(input("Num2 : "))                # give string value for input
+
+print(divide(num1,num2))
+
