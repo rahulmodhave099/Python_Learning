@@ -1,5 +1,5 @@
 # syntax error
-
+'''
 def fun()
     print("Hello")
 
@@ -32,7 +32,7 @@ def fun(a, b):
 fun(10,"Rahul")
 print("End Code")
 
-# Attribute error : it occurres when it deos not find any entity/method in class.
+# Attribute error : it occurres when it deos not find any entity/method to access inside class.
 
 class Demo:
 
@@ -41,7 +41,7 @@ class Demo:
 
 Demo().gun()
 
- # Name error  : it occurres when it deos not find any entity/method in outside class/global space.
+ # Name error  : it occurres when it deos not find any entity/method to access outside class/global space.
 
 class Demo:
 
@@ -49,4 +49,19 @@ class Demo:
         print("In Fun")
 
 fun()
+'''
 
+# Attribute error for NoneType
+class Demo:
+
+    def fun(self):
+        print("In Fun")
+
+    def gun(self):
+        print("In Fun")
+
+obj = Demo()
+obj.fun()
+
+obj = None
+obj.gun()
