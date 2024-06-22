@@ -78,6 +78,11 @@ print(list1[4])
 
 # key error
 
-players = {18:"Virat"}
+players = {18:"Virat",45:"Rohit",7:"MSD"}
+
+print(players[45])
+print(players[18])
+print(players[1])
+
 
 
