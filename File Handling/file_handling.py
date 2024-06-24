@@ -10,3 +10,8 @@ fileobj = open("core2web.txt")
 
 print(type(fileobj))
 
+# reading from a file
+
+fileobj = open("core2web.txt","r")
+
+print(fileobj.read())
