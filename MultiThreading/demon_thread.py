@@ -10,9 +10,6 @@
 # But if we do not give sleep to thread-2 , then the possibility of skipping daemon thread is depend upon their
 # complexity & required timr.
 
-
-
-
 import threading
 from threading import Thread
 import time
