@@ -89,5 +89,19 @@ for i in playerData:
     print(i)
 """
 
+# delete player data
+
+cursorObj.execute("delete from players where gender='F'")
+
+conn.commit()
+
+reading = '''select * from Players'''
+
+cursorObj.execute(reading)
+
+playerData = cursorObj.fetchall()
+
+for i in playerData:
+    print(i)
 
 conn.close()
