@@ -61,5 +61,33 @@ playerData = cursorObj.fetchall()
 
 for i in playerData:
     print(i)
+
+# update player data
+
+reading = '''select * from Players'''
+
+cursorObj.execute(reading)
+
+playerData = cursorObj.fetchall()
+
+for i in playerData:
+    print(i)
+
+print()
+
+cursorObj.execute("update Players set playername='King_Kohli' where jerno=18")
+
+conn.commit()
+
+reading = '''select * from Players'''
+
+cursorObj.execute(reading)
+
+playerData = cursorObj.fetchall()
+
+for i in playerData:
+    print(i)
 """
+
+
 conn.close()
