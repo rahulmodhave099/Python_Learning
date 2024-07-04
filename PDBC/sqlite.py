@@ -36,7 +36,7 @@ cursorObj.execute(player5)
 cursorObj.execute(player6)
 
 conn.commit()
-"""
+
 
 # fetching / reading data from table
 
@@ -53,4 +53,13 @@ print(type(playerData))
 for i in playerData:
     print(i)
 
+# fetching / reading specific data from table
+print()
+cursorObj.execute("select * from Players where teamname='RCB'")
+
+playerData = cursorObj.fetchall()
+
+for i in playerData:
+    print(i)
+"""
 conn.close()
