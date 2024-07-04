@@ -38,6 +38,19 @@ cursorObj.execute(player6)
 conn.commit()
 """
 
+# fetching / reading data from table
 
+reading = '''select * from Players'''
+
+cursorObj.execute(reading)
+
+playerData = cursorObj.fetchall()
+
+print(playerData)
+
+print(type(playerData))
+
+for i in playerData:
+    print(i)
 
 conn.close()
